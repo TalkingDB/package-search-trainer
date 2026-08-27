@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Distribution / packaging
+build/
+# dist/
+*.egg-info/
+
+# Logs & caches
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+junit.xml
+code-coverage-results.md
+pr-comment-body.md
+htmlcov/
+.tox/
+.mypy_cache/
+.pytest_cache/
+.dmypy.json
+.pyre/
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+logs
+.last_build_commit
+
+# Databases
+dictionary.db*
+entities.db*
+regex.db*
+data/
