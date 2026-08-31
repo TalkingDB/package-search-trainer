@@ -27,8 +27,8 @@ lxml = ">=5.3.0,<7.0.0"
 talkingdb-models = { git = "git+https://github.com/TalkingDB/base-tdb-models.git", rev = "6ad6e83c8968c718ac95c018f773dc0ba35f8cd1" }
 talkingdb-clients = { git = "git+https://github.com/TalkingDB/base-tdb-clients.git", rev = "29abea220d96efac7b3ecee9deb9f5af49636174" }
 talkingdb-helpers = { git = "git+https://github.com/TalkingDB/base-tdb-helpers.git", rev = "d7c891b8f2cf804aa3e8b1ffc3a4b74f2d282b11" }
-package-parse-tree = { git = "git+https://github.com/TalkingDB/package-parse-tree.git", rev = "c6d38047d9ea94144d4d8d62df23ceabc17c8c24" }
-package-document-search = { git = "git+https://github.com/TalkingDB/package-document-search.git", rev = "f9b77239e7b574f469c4e9028c29925ae5334261" }
+package-parse-tree = { git = "git+https://github.com/TalkingDB/package-parse-tree.git", rev = "1ea5b70db07608dc8175ea3e6ea55545dc232c73" }
+package-document-search = { git = "git+https://github.com/TalkingDB/package-document-search.git", rev = "e571768fbc8cb4ef49f42789e94b96febd86c47b" }
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4"
