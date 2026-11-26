@@ -5,6 +5,11 @@ A generic crawl and train pipeline: it fetches pages from URLs you give it (or f
 ![Python 3.12 or 3.13](https://img.shields.io/badge/python-3.12%20%7C%203.13-3776AB)
 ![Port 8095](https://img.shields.io/badge/port-8095-555)
 
+<p align="center">
+  <img src="docs/images/demo.gif" alt="Real terminal recording: the example code is shown, then run, and its actual output printed">
+</p>
+<p align="center"><sub>A real run, recorded on 26 Nov 2026 at commit <code>ff916e3</code> with Python 3.13.18: the extractor and chunker example in <a href="docs/usage-and-examples.md#what-the-extractor-and-chunker-produce">Usage and examples</a>, typed and run in a terminal.</sub></p>
+
 | Start here | Go deeper |
 | :--- | :--- |
 | [Where this fits](#where-this-fits) | [Architecture: one crawl, step by step](docs/architecture.md) |
@@ -74,6 +79,12 @@ make local              # API on http://localhost:8095, Swagger at /docs
 - [Beautiful Soup: CSS selectors](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#css-selectors)
 - [Chunking strategies for retrieval](https://www.pinecone.io/learn/chunking-strategies/)
 - [Sitemaps XML format](https://www.sitemaps.org/protocol.html)
+
+## Support TalkingDB
+
+If package-search-trainer saved you time, please [give it a star](https://github.com/TalkingDB/package-search-trainer) ⭐. Stars help other developers find the project.
+
+Found a bug, or a document it gets wrong? [Open an issue](https://github.com/TalkingDB/package-search-trainer/issues/new). We are always here to help and open to a conversation. Explore the TalkingDB applications at [talkingdb.io](https://talkingdb.io/#applications).
 
 ## License
 
