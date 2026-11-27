@@ -6,9 +6,9 @@ A generic crawl and train pipeline: it fetches pages from URLs you give it (or f
 ![Port 8095](https://img.shields.io/badge/port-8095-555)
 
 <p align="center">
-  <img src="docs/images/demo.gif" alt="Real terminal recording: the example code is shown, then run, and its actual output printed">
+  <img src="docs/images/demo.gif" alt="Animated demo of a real run: a product page is read with CSS selectors into fields, a missing selector gives an empty field, and the text is cut into overlapping chunks">
 </p>
-<p align="center"><sub>A real run, recorded on 26 Nov 2026 at commit <code>ff916e3</code> with Python 3.13.18: the extractor and chunker example in <a href="docs/usage-and-examples.md#what-the-extractor-and-chunker-produce">Usage and examples</a>, typed and run in a terminal.</sub></p>
+<p align="center"><sub>A real run of the extractor and chunker at <code>ff916e3</code> with Python 3.13.18, 26 Nov 2026; details in <a href="docs/usage-and-examples.md#what-the-extractor-and-chunker-produce">Usage and examples</a>.</sub></p>
 
 | Start here | Go deeper |
 | :--- | :--- |
