@@ -54,7 +54,12 @@ from talkingdb_st.services.crawl.chunker import chunk_text
 html = """<html><body><h1 class="entry-title">Return policy</h1>
 <div class="entry-content"><p>Items can be returned within 7 days.</p><p>Refunds reach your account in 5 to 7 working days.</p></div></body></html>"""
 
-print(extract_content(html, {"title": "h1.entry-title", "body": "div.entry-content", "price": "span.price"}))
+print(
+    extract_content(
+        html,
+        {"title": "h1.entry-title", "body": "div.entry-content", "price": "span.price"},
+    )
+)
 
 words = " ".join(f"w{i}" for i in range(1, 11))
 for c in chunk_text(words, chunk_size=4, overlap=1):
@@ -81,7 +86,7 @@ The missing `price` selector gives an empty string instead of an error. With `ch
 ```python
 from talkingdb_st.client import STClient
 
-client = STClient()   # CLIENT_MODE=direct by default
+client = STClient()  # CLIENT_MODE=direct by default
 result = client.crawl_and_train(
     "support",
     urls=["https://example.com/help/returns"],
