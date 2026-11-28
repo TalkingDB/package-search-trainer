@@ -1,0 +1,8 @@
+flowchart TB
+    accTitle: Where package-search-trainer fits
+    accDescr: A module calls search-trainer with URLs and selectors. Search-trainer fetches the pages, extracts fields, chunks the content and trains it into package-document-search through DSClient. Shaping crawled data into ontology nodes is left to the caller and package-parse-tree.
+    EAI["module-ecommerce-ai<br>or any caller"] -- "STClient" --> ST["package-search-trainer<br>:8095"]:::here
+    ST -- "HTTP GET" --> WEB["Web pages<br>and sitemaps"]
+    ST -- "DSClient" --> DS["package-document-search<br>vectors + keywords"]
+    EAI -. "ontology data, if wanted" .-> PT["package-parse-tree<br>(PTClient)"]
+    classDef here stroke-width:3px

@@ -1,0 +1,12 @@
+flowchart TB
+    accTitle: Steps inside crawl_and_index
+    accDescr: For each URL the page is fetched. A failed fetch is recorded and skipped. Fields are extracted with CSS selectors, the content field is split into overlapping word chunks, and each chunk gets an id made of the URL and the chunk number. When there is at least one chunk, ids and texts are trained as vectors and the chunks with all fields are trained as keywords. The result counts pages, chunks and failures.
+    U["for each URL"] --> F["fetch_page<br>30 s timeout"]
+    F -- "network error or non 2xx" --> X["add to failures, skip"]
+    F --> E["extract_content<br>CSS selectors to fields"]
+    E --> C["chunk_text<br>content_field, chunk_size, overlap"]
+    C --> ID["id = URL#chunkN"]
+    ID --> V["DSClient.train_vectors<br>[ids, texts]"]
+    ID --> K["DSClient.train_keywords<br>chunk + every field"]
+    V --> R["pages_crawled,<br>chunks_indexed, failures"]
+    K --> R
